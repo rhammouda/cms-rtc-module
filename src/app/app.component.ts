@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RTCService } from 'projects/cms/rtc/src/public-api';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'WebRtcLiveStreaming';
+  constructor(private rtcService: RTCService){
+    rtcService.init({socketServerUrl: "http://localhost:3000",userId:"1"});
+  }
 }
