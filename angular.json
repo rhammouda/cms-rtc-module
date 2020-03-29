@@ -124,38 +124,38 @@
         }
       }
     },
-    "@Cms/RTC": {
+    "cms-rtc-module": {
       "projectType": "library",
-      "root": "projects/cms/rtc",
-      "sourceRoot": "projects/cms/rtc/src",
+      "root": "projects/cms-rtc-module",
+      "sourceRoot": "projects/cms-rtc-module/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/cms/rtc/tsconfig.lib.json",
-            "project": "projects/cms/rtc/ng-package.json"
+            "tsConfig": "projects/cms-rtc-module/tsconfig.lib.json",
+            "project": "projects/cms-rtc-module/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/cms/rtc/tsconfig.lib.prod.json"
+              "tsConfig": "projects/cms-rtc-module/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/cms/rtc/src/test.ts",
-            "tsConfig": "projects/cms/rtc/tsconfig.spec.json",
-            "karmaConfig": "projects/cms/rtc/karma.conf.js"
+            "main": "projects/cms-rtc-module/src/test.ts",
+            "tsConfig": "projects/cms-rtc-module/tsconfig.spec.json",
+            "karmaConfig": "projects/cms-rtc-module/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/cms/rtc/tsconfig.lib.json",
-              "projects/cms/rtc/tsconfig.spec.json"
+              "projects/cms-rtc-module/tsconfig.lib.json",
+              "projects/cms-rtc-module/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

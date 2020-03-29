@@ -39,10 +39,10 @@ export class LiveStreamingServiceService {
   //streamId: id de la formation pour formation en ligne
   SatartStreaming(streamId: string): Observable<MediaStream> {
     navigator.getUserMedia({audio:true, video:true}, function(stream){
-      this.rtcService.client.send('readyToStream', { name: "" });
 
     }, error => {
-      
+      this.rtcService.client.send('readyToStream', { name: "" });
+
     })
 
     return new Observable();

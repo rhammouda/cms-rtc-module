@@ -11,8 +11,11 @@ export class LiveStreamViewerDirective {
   liveStream:LiveStream;
   constructor(private liveStreamingService: LiveStreamingServiceService, private el: ElementRef) { 
     this.video = el.nativeElement;
-    this.liveStream = {socketId: "qlWrIXIZWOYgixYKAAAB", streamId:"2"}
-    this.connect();
+    this.liveStream = {socketId: "xsx9zOgVpN3MBRXxAAAh", streamId:"2"}
+    setTimeout(() => {
+      console.log("connecting to stream ", this.liveStream);
+      this.connect();
+    }, 2000); 
   }
 
 

@@ -46,7 +46,6 @@ export class RTCService {
     this.disConnectedUserSource.next(user);
    });
  }
-
 }
 
 export interface RTCConfig{

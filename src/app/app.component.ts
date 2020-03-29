@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RTCService } from 'projects/cms/rtc/src/public-api';
+import { RTCService } from 'projects/cms-rtc-module/src/public-api';
 
 @Component({
   selector: 'app-root',

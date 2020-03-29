@@ -19,9 +19,9 @@
       "dom"
     ],
     "paths": {
-      "@cms/rtc": [
-        "dist/cms/rtc/cms-rtc",
-        "dist/cms/rtc"
+      "cms-rtc-module": [
+        "dist/cms-rtc-module/cms-rtc",
+        "dist/cms-rtc-module"
       ]
     }
   },

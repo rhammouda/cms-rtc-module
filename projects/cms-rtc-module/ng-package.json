@@ -1,6 +1,6 @@
 {
-  "$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../../dist/cms-rtc-module",
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/cms-rtc-module",
   "lib": {
     "entryFile": "src/public-api.ts"
   },

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import * as io from 'socket.io-client';
+import * as io_ from 'socket.io-client';
 
-
+const io = io_;
 
 @Injectable({
   providedIn: 'root'
